@@ -3,11 +3,15 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
+//import views engine
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
+
 //import places router
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
-    res.send('Hello world!')
+    res.render('home')
 })
 
 //404 route
