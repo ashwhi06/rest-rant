@@ -24,15 +24,13 @@ Follow these steps to get the project up and running:
 
 - npm install
 
-
 ### Start the development server
 
 - npm run dev
 
 The server will start on port 3000. Go to http://localhost:3000 to view it in your browser.
 
-### Route Table
-
+### API Route Table
 
 | Method | Path | Purpose |
 | ------ | ---- | ------- |
