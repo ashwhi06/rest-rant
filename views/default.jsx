@@ -11,7 +11,7 @@ function Def(html) {
         />
         <link
           rel='stylesheet'
-          href='../public/css/style.css'
+          href='/css/style.css'
         />
       </head>
       <body>{html.children}</body>

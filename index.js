@@ -7,6 +7,7 @@ app.set('views', './views') //Views folder
 app.set('view engine', 'jsx') // View Engine
 app.engine('jsx', require('express-react-views').createEngine()) // View Engine
 app.use(express.static('public')) //Static Files
+
 //Controllers & Routes
 app.use('/places', require('./controllers/places'))
 
