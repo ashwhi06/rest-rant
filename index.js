@@ -3,15 +3,21 @@ const express = require('express')
 const app = express()
 
 //Express settings
-app.set('view engine', 'jsx')
-app.engine('jsx', require('express-react-views').createEngine())
-
+app.set('views', './views') //Views folder
+app.set('view engine', 'jsx') // View Engine
+app.engine('jsx', require('express-react-views').createEngine()) // View Engine
+app.use(express.static('public')) //Static Files
 //Controllers & Routes
 app.use('/places', require('./controllers/places'))
 
 //Home route
 app.get('/', (req, res) => {
     res.render('home')
+})
+
+//404 route
+app.get('*', (req, res) => {
+    res.render('error404')
 })
 
 // GET /places
@@ -21,27 +27,17 @@ app.get('/', (req, res) => {
         city: 'Seattle',
         state: 'WA',
         cuisines: 'Thai, Pan-Asian',
-        pic: 'http://placekitten.com/250/250'
+        pic: 'https://images.pexels.com/photos/4587958/pexels-photo-4587958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
       }, {
         name: 'Coding Cat Cafe',
         city: 'Phoenix',
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
-        pic: 'http://placekitten.com/250/250'
+        pic: 'https://images.pexels.com/photos/4587953/pexels-photo-4587953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
       }]
-      
-    res.render('places/index', {places})
+        
+    res.render('places/index', { places })
 })
 
-// // GET /places/index
-// app.get('/places/index', (req, res) => {
-//     let places = []
-//     res.render('places/index', places)
-// })
-
-//404 route
-app.get('*', (req, res) => {
-    res.render('error404')
-})
 
 app.listen(process.env.PORT)
