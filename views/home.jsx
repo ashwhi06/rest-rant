@@ -10,13 +10,16 @@ function home() {
         <h1>HOME</h1>
         <div>
           <img
-            src={`${'https://images.pexels.com/photos/4587958/pexels-photo-4587958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}`}
-            alt='H-Thai-ML'
+            src={`${"/images/watermelon-drink.jpg"}`}
+            alt='Watermelon drink'
           />
         </div>
         <div>
-          Photo by: <a href='AUTHOR_LINK'>Brenda Godinez</a> on{" "}
-          <a href='UNSPLASH_LINK'>Unsplash</a>
+          Photo by:{" "}
+          <a href='https://unsplash.com/photos/sliced-watermelon-with-lemon-on-shot-glass-XoN3v3Ge7EE'>
+            ShengGeng Lin
+          </a>{" "}
+          on <a href='https://unsplash.com'>Unsplash</a>
         </div>
         <a href='/places'>
           <button className='btn-primary'>Places Page</button>

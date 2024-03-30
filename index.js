@@ -10,7 +10,7 @@ app.use(express.static('public')) //Static Files
 app.use(express.urlencoded({ extended: true }))
 
 //Controllers & Routes
-app.use('/places', require('./controllers/places'))
+app.use('/places', require('./controllers/places_controller'))
 
 //Home route
 app.get('/', (req, res) => {
@@ -24,21 +24,7 @@ app.get('*', (req, res) => {
 
 // GET /places
 app.get('/', (req, res) => {
-    let places = [{
-        name: 'H-Thai-ML',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
-        pic: 'https://images.pexels.com/photos/4587958/pexels-photo-4587958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      }, {
-        name: 'Coding Cat Cafe',
-        city: 'Phoenix',
-        state: 'AZ',
-        cuisines: 'Coffee, Bakery',
-        pic: 'https://images.pexels.com/photos/4587953/pexels-photo-4587953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      }]
-        
-    res.render('places/index', { places })
+    res.render('places/index')
 })
 
 

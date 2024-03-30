@@ -3,6 +3,9 @@ h1 {
   color: cornflowerblue;
 }
 
+main {
+  text-align: center;
+}
 img {
-  width: 250px;
+  width: 450px;
 }
