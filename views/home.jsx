@@ -10,7 +10,7 @@ function home() {
         <h1>HOME</h1>
         <div>
           <img
-            src='https://images.pexels.com/photos/4587958/pexels-photo-4587958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+            src={`${'https://images.pexels.com/photos/4587958/pexels-photo-4587958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}`}
             alt='H-Thai-ML'
           />
         </div>
