@@ -10,13 +10,23 @@ img {
   width: 450px;
 }
 
+form {
+  /* border: 2px solid red; */
+  padding: 20px;
+}
+
 label {
   display: flex;
   justify-content: center;
+  /* border: 2px solid blue; */
 }
 
 input {
   margin-left: 10px;
+}
+
+.form-control {
+  /* width: 500px; */
 }
 
 .newSubBtn {
