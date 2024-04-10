@@ -7,7 +7,7 @@ function home() {
       {" "}
       {/*This is the default component that we imported from the default.jsx file.*/}
       <main>
-        <h1>HOME</h1>
+        <h1>REST-rant</h1>
         <div>
           <img
             src={`${"/images/watermelon-drink.jpg"}`}
