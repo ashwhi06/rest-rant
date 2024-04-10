@@ -40,4 +40,11 @@ router.get("/", (req, res) => {
   res.render("places/index", { places }); // This is the response for GET /places (ALL places)
 });
 
+
+//New route for GET /places/new
+router.get("/new", (req, res) => {
+  res.render("places/new");
+});
+
+
 module.exports = router;

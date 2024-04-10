@@ -9,3 +9,16 @@ main {
 img {
   width: 450px;
 }
+
+label {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin-left: 10px;
+}
+
+.newSubBtn {
+  margin-top: 10px;
+}

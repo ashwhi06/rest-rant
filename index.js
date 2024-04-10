@@ -28,4 +28,9 @@ app.get('/', (req, res) => {
 })
 
 
+//New route for GET /places/new
+app.get("/new", (req, res) => {
+  res.render("places/new");
+});
+
 app.listen(process.env.PORT)
