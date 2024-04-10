@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const places = require('../models/place')
+const places = require('../models/places')
 
 router.get('/', (req, res) => {
     let places = [{
@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
         pic: '/images/brunch.jpg'
       }]
         
-    res.render('places/index', places) // This is the response for GET /places (ALL places)
+    res.render('places/index', {places}) // This is the response for GET /places (ALL places)
 })
 
 module.exports = router
