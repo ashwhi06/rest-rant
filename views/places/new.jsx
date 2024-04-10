@@ -11,53 +11,58 @@ function new_form() {
           method='POST'
           action='/places'
         >
-          <div>
+          <div className='form-group'>
             <label htmlFor='name'>Place Name:</label>
             <input
+              className='form-control'
               id='name'
               name='name'
               type='text'
               required
             />
           </div>
-          <div>
+          <div className='form-group'>
             <label htmlFor='pic'>Place Picture:</label>
             <input
+              className='form-control'
               id='url'
               name='pic'
               type='pic'
             />
           </div>
-          <div>
+          <div className='form-group'>
             <label htmlFor='city'>Place City:</label>
             <input
+              className='form-control'
               id='city'
               name='city'
               type='text'
             />
           </div>
-          <div>
+          <div className='form-group'>
             <label htmlFor='state'>Place State:</label>
             <input
+              className='form-control'
               id='state'
               name='state'
               type='text'
             />
           </div>
-          <div>
+          <div className='form-group'>
             <label htmlFor='cuisine'>Place Cuisine:</label>
             <input
+              className='form-control'
               id='cuisine'
               name='cuisine'
               type='text'
             />
           </div>
-          <div class="newSubBtn">
-            <input
-              type='submit'
-              value='Add Place'
-            />
-          </div>
+          <input
+            id='newSubBtn'
+            className='btn btn-primary'
+            type='submit'
+            value='Add Place'
+          />
         </form>
       </main>
     </Def>
