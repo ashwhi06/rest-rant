@@ -9,9 +9,7 @@ function Index(data) {
         key={place.id}
       >
         <h2>{place.name}</h2>
-        <p className='text-center'>
-          {place.cuisines}
-        </p>
+        <p className='text-center'>{place.cuisines}</p>
         <img
           src={`${place.pic}`}
           alt={place.photoCredit}
@@ -29,7 +27,10 @@ function Index(data) {
         <h1>Places to Rant About</h1>
         <div className='row'>{placesFormatted}</div>
         <a href='/'>
-          <button className='btn-primary'>Back to Home</button>
+          <button className='btn btn-primary'>Back to Home</button>
+        </a>
+        <a href='/places/new'>
+          <button className='btn btn-primary'>Add New Places</button>
         </a>
       </main>
     </Def>
